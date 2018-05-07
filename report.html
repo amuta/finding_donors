@@ -12846,9 +12846,9 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> Gradient Boosting is, overall, a model that is built with an collection of "weak learners" . The "Boosting" part means that these weak learners are simple models that are fit on the subset of the original data and then "boosts" itself by sequentially combining these models using a cost function (take cost as the inaccuracy of the model) calculated from the last model. The "Gradient" part comes from Gradient Descent that is a function the the model will use to find the new parameters of each new model from the cost function.</p>
 <p>To understand how training the model works let's go step by step, it first start with building many simple models (learners) that predicts the data and each one of those models create another model that focus on trying to predict where the first model got wrong and combine this new model to the first one. From that it will re-do these steps and gradually increase the accuracy until some threshold make it stop. This iterative training of the model make it be able to capture many complexities of the data and if one's aware of not letting the model train too much and "memorize" the data (also called overfitting) this specific model will surely have a high accuracy compared to most machine learning models (this model have won many data science competitions). To predict the model will simply output the result of the combined prediction of its learners.</p>
-<p><strong>References:</strong>
-Bossting: <a href="https://stats.stackexchange.com/questions/18891/bagging-boosting-and-stacking-in-machine-learning">https://stats.stackexchange.com/questions/18891/bagging-boosting-and-stacking-in-machine-learning</a>
-Gradient Descent:<a href="https://en.wikipedia.org/wiki/Gradient_descent">https://en.wikipedia.org/wiki/Gradient_descent</a></p>
+<p><strong>References</strong></p>
+<p>Boosting: <a href="https://stats.stackexchange.com/questions/18891/bagging-boosting-and-stacking-in-machine-learning">https://stats.stackexchange.com/questions/18891/bagging-boosting-and-stacking-in-machine-learning</a></p>
+<p>Gradient Descent: <a href="https://en.wikipedia.org/wiki/Gradient_descent">https://en.wikipedia.org/wiki/Gradient_descent</a></p>
 
 </div>
 </div>
